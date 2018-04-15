@@ -1,0 +1,640 @@
+{
+    "a_galaxy_workflow": "true", 
+    "annotation": "", 
+    "format-version": "0.1", 
+    "name": "GCAC", 
+    "steps": {
+        "0": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 0, 
+            "input_connections": {}, 
+            "inputs": [], 
+            "label": "input (active)", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 239, 
+                "top": 576
+            }, 
+            "tool_id": null, 
+            "tool_state": "{}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "8132ebf3-23c2-45ea-b52e-0469db4afaf5", 
+            "workflow_outputs": []
+        }, 
+        "1": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 1, 
+            "input_connections": {}, 
+            "inputs": [], 
+            "label": "Input (inactive)", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 244, 
+                "top": 680
+            }, 
+            "tool_id": null, 
+            "tool_state": "{}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "58e75a49-b79c-4f49-8bd7-fe216b794314", 
+            "workflow_outputs": []
+        }, 
+        "2": {
+            "annotation": "", 
+            "content_id": null, 
+            "errors": null, 
+            "id": 2, 
+            "input_connections": {}, 
+            "inputs": [], 
+            "label": "Input (predict)", 
+            "name": "Input dataset", 
+            "outputs": [], 
+            "position": {
+                "left": 244, 
+                "top": 884
+            }, 
+            "tool_id": null, 
+            "tool_state": "{}", 
+            "tool_version": null, 
+            "type": "data_input", 
+            "uuid": "5603ec6c-bdc6-40cf-9fc5-3009791ae516", 
+            "workflow_outputs": []
+        }, 
+        "3": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/padel_descriptor_calculation/padel_descriptor/1.0", 
+            "errors": null, 
+            "id": 3, 
+            "input_connections": {
+                "input": {
+                    "id": 0, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool PaDEL-descriptor", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "PaDEL-descriptor", 
+            "outputs": [
+                {
+                    "name": "descriptor", 
+                    "type": "csv"
+                }, 
+                {
+                    "name": "log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 445, 
+                "top": 455
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/padel_descriptor_calculation/padel_descriptor/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "ab834c6864fc", 
+                "name": "padel_descriptor_calculation", 
+                "owner": "anmoljh", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"detectaromaticity\": \"\\\"-detectaromaticity\\\"\", \"__page__\": 0, \"coordinate2d\": \"\\\"-2d\\\"\", \"thread\": \"\\\"-1\\\"\", \"retain3d\": \"\\\"-retain3d\\\"\", \"coordinate3d\": \"\\\"-3d\\\"\", \"maxruntime\": \"\\\"300000\\\"\", \"__rerun_remap_job_id__\": null, \"retainorder\": \"\\\"-retainorder\\\"\", \"standardizenitro\": \"\\\"-standardizenitro\\\"\", \"fingerprint\": \"\\\"\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"removesalt\": \"\\\"-removesalt\\\"\", \"convert3d\": \"\\\"\\\"\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"maxjob\": \"\\\"-1\\\"\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "c0673990-72ae-4531-a2c7-51aa36506a0d", 
+            "workflow_outputs": []
+        }, 
+        "4": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/padel_descriptor_calculation/padel_descriptor/1.0", 
+            "errors": null, 
+            "id": 4, 
+            "input_connections": {
+                "input": {
+                    "id": 1, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool PaDEL-descriptor", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "PaDEL-descriptor", 
+            "outputs": [
+                {
+                    "name": "descriptor", 
+                    "type": "csv"
+                }, 
+                {
+                    "name": "log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 455, 
+                "top": 607
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/padel_descriptor_calculation/padel_descriptor/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "ab834c6864fc", 
+                "name": "padel_descriptor_calculation", 
+                "owner": "anmoljh", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"detectaromaticity\": \"\\\"-detectaromaticity\\\"\", \"__page__\": 0, \"coordinate2d\": \"\\\"-2d\\\"\", \"thread\": \"\\\"-1\\\"\", \"retain3d\": \"\\\"-retain3d\\\"\", \"coordinate3d\": \"\\\"-3d\\\"\", \"maxruntime\": \"\\\"300000\\\"\", \"__rerun_remap_job_id__\": null, \"retainorder\": \"\\\"-retainorder\\\"\", \"standardizenitro\": \"\\\"-standardizenitro\\\"\", \"fingerprint\": \"\\\"\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"removesalt\": \"\\\"-removesalt\\\"\", \"convert3d\": \"\\\"\\\"\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"maxjob\": \"\\\"-1\\\"\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "a26a43b6-915c-4d09-8f12-87f507e3076e", 
+            "workflow_outputs": []
+        }, 
+        "5": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/padel_descriptor_calculation/padel_descriptor/1.0", 
+            "errors": null, 
+            "id": 5, 
+            "input_connections": {
+                "input": {
+                    "id": 2, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool PaDEL-descriptor", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "PaDEL-descriptor", 
+            "outputs": [
+                {
+                    "name": "descriptor", 
+                    "type": "csv"
+                }, 
+                {
+                    "name": "log", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 464, 
+                "top": 788
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/padel_descriptor_calculation/padel_descriptor/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "ab834c6864fc", 
+                "name": "padel_descriptor_calculation", 
+                "owner": "anmoljh", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"detectaromaticity\": \"\\\"-detectaromaticity\\\"\", \"__page__\": 0, \"coordinate2d\": \"\\\"-2d\\\"\", \"thread\": \"\\\"-1\\\"\", \"retain3d\": \"\\\"-retain3d\\\"\", \"coordinate3d\": \"\\\"-3d\\\"\", \"maxruntime\": \"\\\"300000\\\"\", \"__rerun_remap_job_id__\": null, \"retainorder\": \"\\\"-retainorder\\\"\", \"standardizenitro\": \"\\\"-standardizenitro\\\"\", \"fingerprint\": \"\\\"\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"removesalt\": \"\\\"-removesalt\\\"\", \"convert3d\": \"\\\"\\\"\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"maxjob\": \"\\\"-1\\\"\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "5f5e5c25-ba80-42f7-8b12-c94ae3ac5a9b", 
+            "workflow_outputs": []
+        }, 
+        "6": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/activity_files_merge/merge_activity_files/1.0", 
+            "errors": null, 
+            "id": 6, 
+            "input_connections": {
+                "Input1": {
+                    "id": 3, 
+                    "output_name": "descriptor"
+                }, 
+                "Input2": {
+                    "id": 4, 
+                    "output_name": "descriptor"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Merge Activity files", 
+                    "name": "Input2"
+                }, 
+                {
+                    "description": "runtime parameter for tool Merge Activity files", 
+                    "name": "Input1"
+                }
+            ], 
+            "label": null, 
+            "name": "Merge Activity files", 
+            "outputs": [
+                {
+                    "name": "Merged_file", 
+                    "type": "csv"
+                }
+            ], 
+            "position": {
+                "left": 676, 
+                "top": 514
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/activity_files_merge/merge_activity_files/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "1743a0f8cbd1", 
+                "name": "activity_files_merge", 
+                "owner": "anmoljh", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"Input2\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__page__\": 0, \"Input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"Activity1\": \"\\\"Active\\\"\", \"Activity2\": \"\\\"Inactive\\\"\", \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "17306ce0-a812-433e-875b-267af311aef6", 
+            "workflow_outputs": []
+        }, 
+        "7": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/redundant_entries_remove/remove_reduandant_entries/1.0", 
+            "errors": null, 
+            "id": 7, 
+            "input_connections": {
+                "Input1": {
+                    "id": 6, 
+                    "output_name": "Merged_file"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Remove Redundancy", 
+                    "name": "Input1"
+                }
+            ], 
+            "label": null, 
+            "name": "Remove Redundancy", 
+            "outputs": [
+                {
+                    "name": "Non_redudant_mega_file", 
+                    "type": "csv"
+                }
+            ], 
+            "position": {
+                "left": 738, 
+                "top": 365
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/redundant_entries_remove/remove_reduandant_entries/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "20a170b2a127", 
+                "name": "redundant_entries_remove", 
+                "owner": "anmoljh", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"Input1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "9ea2a4a0-e85e-4dd4-8a51-066fbafb7e79", 
+            "workflow_outputs": []
+        }, 
+        "8": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/csv_to_rdata/csv2rdata/1.0", 
+            "errors": null, 
+            "id": 8, 
+            "input_connections": {
+                "file1": {
+                    "id": 7, 
+                    "output_name": "Non_redudant_mega_file"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Prepare input file", 
+                    "name": "file1"
+                }
+            ], 
+            "label": null, 
+            "name": "Prepare input file", 
+            "outputs": [
+                {
+                    "name": "RData", 
+                    "type": "rdata"
+                }
+            ], 
+            "position": {
+                "left": 843, 
+                "top": 228
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/csv_to_rdata/csv2rdata/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "d98e0124cb31", 
+                "name": "csv_to_rdata", 
+                "owner": "anmoljh", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"file1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "54c718a6-5895-4309-95ed-d30150a99eaa", 
+            "workflow_outputs": []
+        }, 
+        "9": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/rcaret_classification_model/rcaret_classification_model/1.0", 
+            "errors": null, 
+            "id": 9, 
+            "input_connections": {
+                "RDATA": {
+                    "id": 8, 
+                    "output_name": "RData"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Create script from the template file", 
+                    "name": "RDATA"
+                }
+            ], 
+            "label": null, 
+            "name": "Create script from the template file", 
+            "outputs": [
+                {
+                    "name": "model", 
+                    "type": "rdata"
+                }, 
+                {
+                    "name": "document", 
+                    "type": "pdf"
+                }, 
+                {
+                    "name": "datasets", 
+                    "type": "rdata"
+                }
+            ], 
+            "position": {
+                "left": 1014, 
+                "top": 367
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/rcaret_classification_model/rcaret_classification_model/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "766322012f8b", 
+                "name": "rcaret_classification_model", 
+                "owner": "anmoljh", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"OPTION11\": \"{\\\"MISSINGFILTERECHO\\\": \\\"FALSE\\\", \\\"PCAPLOTECHO\\\": \\\"FALSE\\\", \\\"CORRFILTERRESULT\\\": \\\"tex\\\", \\\"MISSINGFILTEREVAL\\\": \\\"TRUE\\\", \\\"NZVECHO\\\": \\\"FALSE\\\", \\\"RESAMPTABLEECHO\\\": \\\"FALSE\\\", \\\"FITMODELRESULT\\\": \\\"tex\\\", \\\"NUMWORKERS\\\": \\\"1\\\", \\\"CORRFILTERECHO\\\": \\\"FALSE\\\", \\\"PREPROCECHO\\\": \\\"FALSE\\\", \\\"CLASSPROBSTEXECHO1\\\": \\\"FALSE\\\", \\\"FITMODELECHO\\\": \\\"FALSE\\\", \\\"SETUPGRIDSIZE\\\": \\\"3\\\", \\\"SETUPGRIDECHO\\\": \\\"FALSE\\\", \\\"PCAPLOTRESULT\\\": \\\"tex\\\", \\\"SAVEDATAECHO\\\": \\\"FALSE\\\", \\\"MISSINGFILTERRESULT\\\": \\\"tex\\\", \\\"MODELDESCRECHO\\\": \\\"FALSE\\\", \\\"CORRFILTEREVAL\\\": \\\"TRUE\\\", \\\"RESAMPTABLERESULT\\\": \\\"tex\\\", \\\"SAAMPLING\\\": \\\"garBage\\\", \\\"STOPWORKERSRESULT\\\": \\\"hide\\\", \\\"INITIALDATASPLITEVAL\\\": \\\"TRUE\\\", \\\"NZVEVAL\\\": \\\"TRUE\\\", \\\"PCAECHO\\\": \\\"FALSE\\\", \\\"SETUPWORKERSEVAL\\\": \\\"FALSE\\\", \\\"PARAMETERS\\\": \\\"basic\\\", \\\"SETUPWORKERSECHO\\\": \\\"FALSE\\\", \\\"NUMREPEAT\\\": \\\"3\\\", \\\"SAVEDATARESULT\\\": \\\"tex\\\", \\\"SETUPWORKERSRESULT\\\": \\\"tex\\\", \\\"FITMODELEVAL\\\": \\\"TRUE\\\", \\\"SETUPGRIDRESULT\\\": \\\"hide\\\", \\\"TESTPREDECHO\\\": \\\"FALSE\\\", \\\"GETDATAINFOEVAL\\\": \\\"TRUE\\\", \\\"STOPWORKERSECHO\\\": \\\"FALSE\\\", \\\"PCACOMP\\\": \\\"3\\\", \\\"INITIALDATASPLITECHO\\\": \\\"FALSE\\\", \\\"PROFILEPLOTFIG\\\": \\\"TRUE\\\", \\\"PREPROCEVAL\\\": \\\"TRUE\\\", \\\"CLASSPROBSTEXRESULT\\\": \\\"tex\\\", \\\"INITIALDATASPLITRESULT\\\": \\\"tex\\\", \\\"RESAMPNAME\\\": \\\"boot632\\\", \\\"PERCENT\\\": \\\"0.8\\\", \\\"MISSINGFILTERTHRESHR\\\": \\\"0.2\\\", \\\"SETUPRESAMPLINGRESULT\\\": \\\"hide\\\", \\\"PCARESULT\\\": \\\"hide\\\", \\\"TESTPREDRESULT\\\": \\\"tex\\\", \\\"PCAPLOTEVAL\\\": \\\"TRUE\\\", \\\"GETDATAINFORESULT\\\": \\\"hide\\\", \\\"GETDATAINFOECHO\\\": \\\"FALSE\\\", \\\"MISSINGFILTERTHRESHC\\\": \\\"0.2\\\", \\\"PCAPLOTFIG\\\": \\\"TRUE\\\", \\\"RESAMPLENUMBERPERCENT\\\": \\\"0.75\\\", \\\"THRESHHOLDCOR\\\": \\\"0.75\\\", \\\"CLASSPROBSTEXRESULT1\\\": \\\"hide\\\", \\\"RESAMPLENUMBER\\\": \\\"10\\\", \\\"CLASSPROBSTEXECHO\\\": \\\"FALSE\\\", \\\"SETUPRESAMPLINGECHO\\\": \\\"FALSE\\\", \\\"MODELDESCRRESULT\\\": \\\"tex\\\", \\\"PROFILEPLOTECHO\\\": \\\"FALSE\\\", \\\"NZVRESULT\\\": \\\"tex\\\", \\\"__current_case__\\\": 0, \\\"PREPROCRESULT\\\": \\\"tex\\\", \\\"PCAEVAL\\\": \\\"TRUE\\\"}\", \"RDATA\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"METHOD\": \"\\\"pls\\\"\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "7d60945a-95df-42a7-97ef-b1f1ee7e090a", 
+            "workflow_outputs": []
+        }, 
+        "10": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/feature_selection/featureSelectR/1.0", 
+            "errors": null, 
+            "id": 10, 
+            "input_connections": {
+                "input": {
+                    "id": 8, 
+                    "output_name": "RData"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Feature Selection", 
+                    "name": "input"
+                }
+            ], 
+            "label": null, 
+            "name": "Feature Selection", 
+            "outputs": [
+                {
+                    "name": "profile", 
+                    "type": "data"
+                }, 
+                {
+                    "name": "finalset", 
+                    "type": "rdata"
+                }
+            ], 
+            "position": {
+                "left": 1412, 
+                "top": 229
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/feature_selection/featureSelectR/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "24f2624e8a55", 
+                "name": "feature_selection", 
+                "owner": "anmoljh", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"function1\": \"\\\"rfFuncs\\\"\", \"__page__\": 0, \"repeat\": \"\\\"3\\\"\", \"__rerun_remap_job_id__\": null, \"number\": \"\\\"5\\\"\", \"corcutoff\": \"\\\"0.8\\\"\", \"SAMPLING\": \"\\\"garBage\\\"\", \"resampling\": \"\\\"repeatedcv\\\"\", \"input\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"cores\": \"\\\"1\\\"\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "64fd14df-fda7-4921-9c2e-36e0f39d49df", 
+            "workflow_outputs": []
+        }, 
+        "11": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/activity_predict/predict_activity/1.0", 
+            "errors": null, 
+            "id": 11, 
+            "input_connections": {
+                "file1": {
+                    "id": 5, 
+                    "output_name": "descriptor"
+                }, 
+                "model": {
+                    "id": 9, 
+                    "output_name": "model"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Predict Activity", 
+                    "name": "file1"
+                }, 
+                {
+                    "description": "runtime parameter for tool Predict Activity", 
+                    "name": "model"
+                }
+            ], 
+            "label": null, 
+            "name": "Predict Activity", 
+            "outputs": [
+                {
+                    "name": "output1", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1070, 
+                "top": 559
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/activity_predict/predict_activity/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "43195f69f0f9", 
+                "name": "activity_predict", 
+                "owner": "anmoljh", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"file1\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"model\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "ae0d5060-f79a-4ffa-8032-f855312d9734", 
+            "workflow_outputs": []
+        }, 
+        "12": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/candidate_compound_select/select_compound/1.0", 
+            "errors": null, 
+            "id": 12, 
+            "input_connections": {
+                "predictionfile": {
+                    "id": 11, 
+                    "output_name": "output1"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Select Compounds based of score", 
+                    "name": "predictionfile"
+                }
+            ], 
+            "label": null, 
+            "name": "Select Compounds based of score", 
+            "outputs": [
+                {
+                    "name": "SelectedCompound", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1380, 
+                "top": 585
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/candidate_compound_select/select_compound/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "3bd5537cc516", 
+                "name": "candidate_compound_select", 
+                "owner": "anmoljh", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"GT\": \"\\\"0.7\\\"\", \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"__rerun_remap_job_id__\": null, \"LT\": \"\\\"1.0\\\"\", \"type\": \"\\\"Active\\\"\", \"predictionfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "8715072f-1a35-49c1-8d6d-52c8b09a859b", 
+            "workflow_outputs": []
+        }, 
+        "13": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/compound_id_extract/extract_compound_id/1.0", 
+            "errors": null, 
+            "id": 13, 
+            "input_connections": {
+                "predictionfile": {
+                    "id": 12, 
+                    "output_name": "SelectedCompound"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool Extract Compound IDs From Prediction Result", 
+                    "name": "predictionfile"
+                }
+            ], 
+            "label": null, 
+            "name": "Extract Compound IDs From Prediction Result", 
+            "outputs": [
+                {
+                    "name": "extracted_IDs", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1532, 
+                "top": 719
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/compound_id_extract/extract_compound_id/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "179e2578e4c0", 
+                "name": "compound_id_extract", 
+                "owner": "anmoljh", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": 0, \"__rerun_remap_job_id__\": null, \"chromInfo\": \"\\\"/home/galaxy/galaxy-dist/tool-data/shared/ucsc/chrom/?.len\\\"\", \"predictionfile\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\"}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "4e65c9ef-640e-48df-8bc0-879127153611", 
+            "workflow_outputs": []
+        }, 
+        "14": {
+            "annotation": "", 
+            "content_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/mayatool_extract/ExtractFromSDFiles/1.0", 
+            "errors": null, 
+            "id": 14, 
+            "input_connections": {
+                "indexnumbers": {
+                    "id": 13, 
+                    "output_name": "extracted_IDs"
+                }, 
+                "inputsdf": {
+                    "id": 2, 
+                    "output_name": "output"
+                }
+            }, 
+            "inputs": [
+                {
+                    "description": "runtime parameter for tool ExtractFromSDFiles", 
+                    "name": "indexnumbers"
+                }, 
+                {
+                    "description": "runtime parameter for tool ExtractFromSDFiles", 
+                    "name": "inputsdf"
+                }
+            ], 
+            "label": null, 
+            "name": "ExtractFromSDFiles", 
+            "outputs": [
+                {
+                    "name": "outputsdf", 
+                    "type": "sdf"
+                }, 
+                {
+                    "name": "logs", 
+                    "type": "txt"
+                }
+            ], 
+            "position": {
+                "left": 1802, 
+                "top": 887
+            }, 
+            "post_job_actions": {}, 
+            "tool_id": "testtoolshed.g2.bx.psu.edu/repos/anmoljh/mayatool_extract/ExtractFromSDFiles/1.0", 
+            "tool_shed_repository": {
+                "changeset_revision": "f92727653682", 
+                "name": "mayatool_extract", 
+                "owner": "anmoljh", 
+                "tool_shed": "testtoolshed.g2.bx.psu.edu"
+            }, 
+            "tool_state": "{\"__page__\": null, \"indexnumbers\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"Identifier\": \"\\\"MOLECULE_NAME\\\"\", \"inputsdf\": \"{\\\"__class__\\\": \\\"RuntimeValue\\\"}\", \"__rerun_remap_job_id__\": null}", 
+            "tool_version": "1.0", 
+            "type": "tool", 
+            "uuid": "4155f27c-47d5-4fa4-a586-be088ac53be2", 
+            "workflow_outputs": []
+        }
+    }, 
+    "uuid": "d87f6d37-2acc-4a4a-a8e1-760a99088888"
+}

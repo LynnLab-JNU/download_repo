@@ -1,0 +1,81 @@
+tools:
+- name: 'redundant_entries_remove'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'descriptor_calculation'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - '46800a6ab357'
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'activity_files_merge'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'descriptor_calculation'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - '1743a0f8cbd1'
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'padel_descriptor_calculation'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'descriptor_calculation'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - 'ab834c6864fc' 
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'feature_selection'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'model_building_prediction'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - '24f2624e8a55'
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'activity_predict'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'model_building_prediction'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - 'ae60ef466288'       
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'rcaret_classification_model'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'model_building_prediction'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - 'e92a130f6a18'
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'csv_to_rdata'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'model_building_prediction'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - '6b9d382cb4a5'
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'mayatool_extract'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'candidate_compound_extraction'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - 'f92727653682'       
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'compound_id_extract'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'candidate_compound_extraction'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - '179e2578e4c0'       
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
+- name: 'candidate_compound_select'
+  owner: 'anmoljh'
+  tool_panel_section_id: 'candidate_compound_extraction'
+  tool_shed_url: 'https://testtoolshed.g2.bx.psu.edu/'
+  revisions:
+  - '557baa97ed72'       
+  install_tool_dependencies: True
+  install_resolver_dependencies: False
